@@ -57,14 +57,6 @@ const PORT = process.env.PORT || 2022;
 // URLS
 // app.use("*", require("./routes/down"))
 app.use("/", require("./routes/index"));
-app.use("/", require("./routes/auth"));
 app.use('/', trouter)
-// app.use("*", (req, res) => {
-//   try {
-//     return res.redirect("/")
-//   } catch (err) {
-//     return res.redirect("/");
-//   }
-// });
 
 app.listen(PORT, () => console.log(`server started on port ${PORT}`));
